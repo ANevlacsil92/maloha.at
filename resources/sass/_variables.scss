@@ -1,0 +1,12 @@
+// Body
+$body-bg: #f8fafc;
+
+@font-face {
+    font-family: "Lora";
+    src: local("Lora"), url(/fonts/Lora-Regular.ttf) format("truetype");
+  }
+
+// Typography
+$font-family-sans-serif: 'Lora';
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
