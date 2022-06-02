@@ -126,7 +126,7 @@
                         <div class="col d-flex justify-content-center">LEISTUNGEN</div>
                     </div>
                     <div class="row description">
-                        <div class="col-md-4 mt-2 mb-2 d-flex justify-content-center pr-3 pl-3 ">
+                        <div class="col-md-6 mt-2 mb-2 d-flex justify-content-center pr-3 pl-3 ">
                             <div class="card h-100 w-100">
                                 <div class="card-body">
                                     <h5 class="card-title pb-3 pt-2">
@@ -185,7 +185,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mt-2 mb-2 d-flex justify-content-center pr-3 pl-3 ">
+                        <div class="col-md-6 mt-2 mb-2 d-flex justify-content-center pr-3 pl-3 ">
                             <div class="card h-100 w-100">
                                 <div class="card-body">
                                     <h5 class="card-title pb-3 pt-2">
@@ -248,16 +248,20 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row headline pt-5 pb-5">
+                        <div class="col d-flex justify-content-center">WEITERE ANGEBOTE</div>
+                    </div>
+                    <div class="row description">
+
                         <div class="col-md-4 mt-2 mb-2 d-flex justify-content-center pr-3 pl-3 ">
                             <div class="card h-100 w-100">
-                                <div id="card-body-additional-services" class="card-body">
-                                    <h5 class="card-title pb-3 pt-2">
-                                        <div class="col d-flex justify-content-center">Sonstige Angebote</div>
+                                <div class="card-body">
+                                    <h5 id="container-ft-title" class="card-title pb-3 pt-2">
+                                        <div class="col d-flex justify-content-center">Funktionales Training</div>
                                     </h5>
-                                    <h6 class="card-title card-title-additional-service card-title-small pb-3 pt-2">
-                                        <div class="col d-flex">Funktionales Training</div>
-                                    </h6>
-                                    <div class="container container-additional-service card-text">
+                                    <div class="container card-text">
                                         <div class="row">
                                             <p>Das Funktionale Training ist die ideale Möglichkeit, deinen gesamten Körper
                                                 in kurzer Zeit zu trainieren. Dabei werden Muskelgruppen nicht isoliert beansprucht,
@@ -268,10 +272,21 @@
                                                     werden? Dann kontaktiere mich und buche eine Functional Training - Session!</b></p>
                                         </div>
                                     </div>
-                                    <h6 class="card-title card-title-additional-service card-title-small pb-3 pt-5">
-                                        <div class="col d-flex">Personal Training und Trainingsplangestaltung</div>
-                                    </h6>
-                                    <div class="container container-additional-service card-text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-2 mb-2 d-flex justify-content-center pr-3 pl-3 ">
+                            <div class="card h-100 w-100">
+                                <div class="card-body">
+                                    <div id="container-pt-title">
+                                        <h5 class="card-title pt-2">
+                                            <div class="col d-flex justify-content-center">Personal Training und</div>
+                                        </h5>
+                                        <h5 class="card-title pb-3">
+                                            <div class="col d-flex justify-content-center">Trainingsplangestaltung</div>
+                                        </h5>
+                                    </div>
+                                    <div class="container card-text">
                                         <div class="row">
                                             <p>Beim Personal Training bekommst du einen individuellen Trainingsplan, nach welchem du
                                                 anschließend allein über einen längeren Zeitraum, am besten im Fitnessstudio,
@@ -283,10 +298,16 @@
                                                     Dann kontaktiere mich und buche ein Personal Training!</b></p>
                                         </div>
                                     </div>
-                                    <h6 class="card-title card-title-additional-service card-title-small pb-3 pt-5">
-                                        <div class="col d-flex">ONLINE Liveworkouts</div>
-                                    </h6>
-                                    <div class="container container-additional-service card-text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-2 mb-2 d-flex justify-content-center pr-3 pl-3 ">
+                            <div class="card h-100 w-100">
+                                <div class="card-body">
+                                    <h5 id="container-olw-title" class="card-title pb-3 pt-2">
+                                        <div class="col d-flex justify-content-center">ONLINE Liveworkouts</div>
+                                    </h5>
+                                    <div class="container card-text">
                                         <div class="row">
                                             <p>Jeden Dienstag um 19:00 Uhr biete ich ein kostenloses ONLINE Workout an. Dabei trainieren wir
                                                 den ganzen Körper, stärken unsere Ausdauer und gehen am Ende bei einer Fitnesschallenge nochmal an unsere Grenzen!
@@ -311,22 +332,11 @@
         if (!mobileCheck()) {
             document.getElementById("container-fitness-info").style.height = document.getElementById("container-health-info").offsetHeight + "px";
             document.getElementById("container-health-containing").style.height = document.getElementById("container-fitness-containing").offsetHeight + "px";
+            document.getElementById("container-ft-title").style.height = document.getElementById("container-pt-title").offsetHeight + "px";
+            document.getElementById("container-olw-title").style.height = document.getElementById("container-pt-title").offsetHeight + "px";
 
-            additionalServiceSpace = document.getElementById("card-body-additional-services").offsetHeight
 
-            var headlines = document.getElementsByClassName("card-title-additional-service")
 
-            for (var i = 0; i < headlines.length; i++) {
-                additionalServiceSpace -= headlines[i].offsetHeight
-            }
-
-            var infotexts = document.getElementsByClassName("container-additional-service")
-
-            for (var i = 0; i < infotexts.length - 1; i++) {
-                infotexts[i].style.height = additionalServiceSpace/4 + "px";
-            }
-
-            
         }
     }
 
