@@ -258,9 +258,9 @@
                         <div class="col-md-4 mt-2 mb-2 d-flex justify-content-center pr-3 pl-3 ">
                             <div class="card h-100 w-100">
                                 <div class="card-body">
-                                    <h5 id="container-ft-title" class="card-title pb-3 pt-2">
+                                    <h6 id="container-ft-title" class="card-title pb-3 pt-2">
                                         <div class="col d-flex justify-content-center">Funktionales Training</div>
-                                    </h5>
+                                    </h6>
                                     <div class="container card-text">
                                         <div class="row">
                                             <p>Das Funktionale Training ist die ideale Möglichkeit, deinen gesamten Körper
@@ -279,9 +279,9 @@
                             <div class="card h-100 w-100">
                                 <div class="card-body">
                                     <div id="container-pt-title">
-                                        <h5 class="card-title pt-2">
+                                        <h6 class="card-title pt-2">
                                             <div class="col d-flex justify-content-center">Personal Training und</div>
-                                        </h5>
+                                        </h6>
                                         <h5 class="card-title pb-3">
                                             <div class="col d-flex justify-content-center">Trainingsplangestaltung</div>
                                         </h5>
@@ -304,9 +304,9 @@
                         <div class="col-md-4 mt-2 mb-2 d-flex justify-content-center pr-3 pl-3 ">
                             <div class="card h-100 w-100">
                                 <div class="card-body">
-                                    <h5 id="container-olw-title" class="card-title pb-3 pt-2">
+                                    <h6 id="container-olw-title" class="card-title pb-3 pt-2">
                                         <div class="col d-flex justify-content-center">ONLINE Liveworkouts</div>
-                                    </h5>
+                                    </h6>
                                     <div class="container card-text">
                                         <div class="row">
                                             <p>Jeden Dienstag um 19:00 Uhr biete ich ein kostenloses ONLINE Workout an. Dabei trainieren wir
