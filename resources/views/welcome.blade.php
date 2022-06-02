@@ -25,7 +25,7 @@
     </style>
 </head>
 
-<body class="antialiased">
+<body class="antialiased" onload="setHeights()">
 
     <div class="container-fluid">
 
@@ -117,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <div class="row services mt-5 pb-5">
+        <div class="row services  mt-5 pb-5">
             <div class="col">
                 <div class="container">
                     <div class="row headline pt-5 pb-5">
@@ -130,7 +130,7 @@
                                     <h5 class="card-title pb-3 pt-2">
                                         <div class="col d-flex justify-content-center">Fitnesscoaching</div>
                                     </h5>
-                                    <div class="container card-text">
+                                    <div id="container-fitness-info" class="container card-text">
                                         <div class="row">
                                             <p><u>Dauer:</u> Wochenweise buchbar</p>
                                         </div>
@@ -151,7 +151,7 @@
                                     <h5 class="card-title card-title-small pb-3 pt-2">
                                         <div class="col d-flex justify-content-center">Im Coaching enthalten:</div>
                                     </h5>
-                                    <div class="container card-text">
+                                    <div id="container-fitness-containing" class="container card-text pb-4">
                                         <div class="row">
                                             <ul>
                                                 <li>mind. 2 intensive Trainingssessions pro Woche (erweiterbar und sowohl indoor/outdoor möglich)</li>
@@ -164,7 +164,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <h5 class="card-title card-title-small pb-3 pt-2">
+                                    <h5 class="card-title card-title-small pb-3">
                                         <div class="col d-flex justify-content-center">Mögliche Schwerpunktsetzung:</div>
                                     </h5>
                                     <div class="container card-text">
@@ -189,7 +189,7 @@
                                     <h5 class="card-title pb-3 pt-2">
                                         <div class="col d-flex justify-content-center">Gesundheitscoaching</div>
                                     </h5>
-                                    <div class="container card-text">
+                                    <div id="container-health-info" class="container card-text pb-5">
                                         <div class="row">
                                             <p><u>Dauer:</u> wahlweise 4,6 oder 8 Wochen lang (wöchentlich erweiterbar)</p>
                                         </div>
@@ -212,10 +212,10 @@
                                                 gesund und aktiv zu gestalten.</p>
                                         </div>
                                     </div>
-                                    <h5 class="card-title card-title-small pb-3 pt-2">
+                                    <h5 class="card-title card-title-small pb-3">
                                         <div class="col d-flex justify-content-center">Im Coaching enthalten:</div>
                                     </h5>
-                                    <div class="container card-text">
+                                    <div id="container-health-containing" class="container card-text">
                                         <div class="row">
                                             <ul>
                                                 <li>Wöchentliche 1:1 Coachingsessions, die auf deine Bedürfnisse und deine Ziele abgestimmt sind
@@ -294,7 +294,6 @@
                                             <p><b><a href="https://phwien-ac-at.zoom.us/j/5717902326">Gemeinsamen Fitnessraum betreten!</a></b></p>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -304,5 +303,16 @@
         </div>
     </div>
 </body>
+
+<script>
+        
+
+        function setHeights(){
+            document.getElementById("container-fitness-info").style.height = document.getElementById("container-health-info").offsetHeight + "px";
+            document.getElementById("container-health-containing").style.height = document.getElementById("container-fitness-containing").offsetHeight + "px";
+        } 
+
+        window.onresize = setHeights
+    </script>
 
 </html>

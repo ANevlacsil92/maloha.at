@@ -21,7 +21,7 @@
         font-style: italic;
     }
 
-    .head-carousel{
+    .head-carousel {
         letter-spacing: 2px;
         font-size: 20px;
     }
@@ -32,17 +32,17 @@
     background-color: #f8fafc;
     font-size: 20px;
 
-    .quote{
+    .quote {
         font-weight: bold;
         font-style: italic;
     }
-    
-    .card{
+
+    .card {
         height: auto;
     }
 
-    .card-title{
-        font-weight: bold!important;
+    .card-title {
+        font-weight: bold !important;
     }
 }
 
@@ -51,24 +51,28 @@
     color: #6B7F8C;
     font-size: 15px;
 
-    .headline{
+    .headline {
         font-size: 40px;
-        color: #f8fafc!important;
+        color: #f8fafc !important;
     }
 
-    .card-title{
-        font-weight: bold!important;
+    .card-title {
+        font-weight: bold !important;
         font-size: 25px;
         align-items: center;
+
+        .col {
+            overflow-wrap: anywhere;
+        }
     }
 
-    .card-title-small{
-        font-weight: bold!important;
+    .card-title-small {
+        font-weight: bold !important;
         font-size: 20px;
         align-items: center;
     }
-
-    a{
+    
+    a {
         color: #6B7F8C;
     }
 }
