@@ -280,11 +280,11 @@
                                 <div class="card-body">
                                     <div id="container-pt-title">
                                         <h6 class="card-title pt-2">
-                                            <div class="col d-flex justify-content-center">Personal Training und</div>
+                                            <div class="col d-flex justify-content-center">Personal Training mit</div>
                                         </h6>
-                                        <h5 class="card-title pb-3">
+                                        <h6 class="card-title pb-3">
                                             <div class="col d-flex justify-content-center">Trainingsplangestaltung</div>
-                                        </h5>
+                                        </h6>
                                     </div>
                                     <div class="container card-text">
                                         <div class="row">
